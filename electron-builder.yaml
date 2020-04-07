@@ -1,0 +1,4 @@
+appId: ElectronAutoUpdateTestByArc
+publish:
+  provider: github
+  token: 859df3da050125167eec355d37bfc75f48875217
