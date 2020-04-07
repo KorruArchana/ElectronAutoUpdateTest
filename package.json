@@ -1,6 +1,6 @@
 {
   "name": "electron-quick-start",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
@@ -23,6 +23,19 @@
   "dependencies": {
     "electron-updater": "^4.2.5",
     "macaddress": "^0.2.9"
+  },
+  "build": {
+    "files": [
+      "./build/**/*",
+      "./main.js"
+    ],
+    "publish": {
+      "appId": "ElectronAutoUpdateApp",
+      "provider": "github",
+      "repo": "ElectronAutoUpdateTest",
+      "owner": "KorruArchana",
+      "token": "0b6429fe7f75c716c1f9b66293f979db34a62b98"
+    }
   },
   "repository": {
     "type" : "git",
